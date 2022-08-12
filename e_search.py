@@ -19,7 +19,7 @@ while True:
     for item in result['Items']:
         body = {"RestaurantID": item['business_id'], "Cuisine": item['cuisine']}
         print(body)
-        r = requests.post(url, data=json.dumps(body).encode("utf-8"), headers=headers, auth=('aqz1998','Application1!'))
+        r = requests.post(url, data=json.dumps(body).encode("utf-8"), headers=headers, auth=('',''))
         print(r)
         inserted_values += 1
     if 'LastEvaluatedKey' in result:
