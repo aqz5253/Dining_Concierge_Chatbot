@@ -8,11 +8,11 @@ from urllib.parse import quote
 from requests.auth import HTTPDigestAuth
 
 
-API_KEY = "HQn3l0XHc_L-wud05GKLUZIZ7xxDUO0-CdJRRm-NHDBdO7T7Lzc0aegycR5U_csvPRSMLTS3lMDhrXkBqPZia752zVeZHxjMlVtO7-LQXyCW3sckSB99gu9cWBMXYnYx"
+API_KEY = ""
 
 url = 'https://api.yelp.com/v3/businesses/search'
 
-dynamodb = boto3.client('dynamodb',region_name="us-east-1",aws_access_key_id="AKIA4L5W3Z6XYBNMICPY",aws_secret_access_key="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")
+dynamodb = boto3.client('dynamodb',region_name="us-east-1",aws_access_key_id="",aws_secret_access_key="")
 
 headers = {'Authorization' : 'Bearer {}'.format(API_KEY)}
 
