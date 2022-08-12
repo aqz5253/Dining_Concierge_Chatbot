@@ -8,7 +8,7 @@ from boto3.dynamodb.conditions import Key
 
 url='https://search-yelp-dining-4vjeskyq2dilmwvso7qkqyookm.us-east-1.es.amazonaws.com/diningrestaurant/restaurant'
 headers = {"Content-Type": "application/json"}
-dynamodb = boto3.resource('dynamodb', region_name='us-east-1',aws_access_key_id='AKIA4L5W3Z6XYBNMICPY',aws_secret_access_key='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')
+dynamodb = boto3.resource('dynamodb', region_name='us-east-1',aws_access_key_id='',aws_secret_access_key='')
 table = dynamodb.Table('yelp-restaurants')
 print(table)
 result= table.scan()
