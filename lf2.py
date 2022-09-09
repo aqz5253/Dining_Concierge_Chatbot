@@ -54,7 +54,7 @@ def lambda_handler(event, context):
           }
         }
     headers = { "Content-Type": "application/json" }
-    response=requests.get(url,auth=('aqz1998','Application1!'),headers=headers,data=json.dumps(query))
+    response=requests.get(url,auth=('aqz1998',''),headers=headers,data=json.dumps(query))
     data = json.loads(response.content.decode('utf-8'))
     print(data)
     
